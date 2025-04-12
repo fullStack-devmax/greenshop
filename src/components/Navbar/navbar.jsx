@@ -30,13 +30,13 @@ export const Navbar = () => {
                         </svg>
                     </div>
                     <div className={navbarSL.main_navbar_flexbox__menu}>
-                        <Link to='/'>Home</Link>
-                        <Link to='/'>Shop</Link>
-                        <Link to='/'>Plant Care</Link>
-                        <Link to='/'>Blogs</Link>
+                        <Link className={navbarSL.main_navbar_flexbox__menu_item} to='/'>Home</Link>
+                        <Link className={navbarSL.main_navbar_flexbox__menu_item} to='/shop'>Shop</Link>
+                        <Link className={navbarSL.main_navbar_flexbox__menu_item} to='/'>Plant Care</Link>
+                        <Link className={navbarSL.main_navbar_flexbox__menu_item} to='/'>Blogs</Link>
                     </div>
                     <div className={navbarSL.main_navbar_flexbox__privside}>
-                        <Link to='/'>
+                        <Link className={navbarSL.main_navbar_flexbox__privside_btn} to='/'>
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.1601 10.1006H8.12598" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M15.7212 7.67059L18.1612 10.1006L15.7212 12.5306" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

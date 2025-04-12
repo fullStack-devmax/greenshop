@@ -1,0 +1,55 @@
+@use '../../_mixins.scss';
+@use '../../_variables.scss';
+
+header{
+    margin-top: 10px;
+    background-color: rgb(194 194 194 / 16%);
+    .flex{
+        padding: 0 40px;
+        @include mixins.flexbox;
+        &_textbox{
+            h5{
+                font-family: Cera Pro;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 10%;
+                text-transform: uppercase;
+                color: variables.$second-type-color;                
+            }
+            h1{
+                width: 520px;
+                font-family: Cera Pro;
+                font-weight: 900;
+                font-size: 70px;
+                line-height: 70px;
+                text-transform: uppercase;
+                color: variables.$second-type-color;
+                span{
+                    color: variables.$main-color;
+                }
+            }
+            p{
+                width: 557px;
+                font-family: Cera Pro;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                color: variables.$second-type-color                
+            }
+            .btn{
+                margin-top: 50px;
+                display: inline-block !important;
+                @include mixins.main-btn;
+            }
+        }
+        &_imgbox{
+            position: relative;
+            img:first-child{
+                position: absolute;
+                left: 67px;
+                bottom: 59px;
+            }
+        }
+    }
+}

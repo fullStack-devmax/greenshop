@@ -1,0 +1,38 @@
+@use '../../_mixins.scss';
+@use '../../_variables.scss';
+
+.main_navbar{
+    border-bottom: 0.3px solid #46a35880;
+    &_flexbox{
+        @include mixins.flexbox;
+        padding: 15px 0;
+        &__menu{
+            @include mixins.flexbox;
+            column-gap: 32px;
+            &_item{
+                opacity: 0.7;
+                transition: all 0.3s ease;
+                padding: 5px 0;
+                text-decoration: none;
+                position: relative;
+                text-underline-offset: 9px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20.11px;
+                color: variables.$second-type-color;
+                &:hover{
+                    opacity: 1;
+                    text-decoration: underline variables.$main-color;
+                    text-underline-offset: 31px;
+                }
+            }
+        }
+        &__privside{
+            @include mixins.flexbox;
+            // column-gap: 32px;
+            &_btn{
+                @include mixins.main-btn;
+            }
+        }
+    }
+}

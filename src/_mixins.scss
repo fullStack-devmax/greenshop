@@ -1,0 +1,17 @@
+@use './_variables';
+
+@mixin flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin main-btn {
+    @include flexbox;
+    column-gap: 3px;
+    padding: 12px;
+    border-radius: 6px;
+    background-color: variables.$main-color;
+    color: variables.$third-type-color;
+    text-decoration: none;
+}

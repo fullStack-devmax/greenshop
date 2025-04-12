@@ -1,0 +1,57 @@
+@use '../../_variables.scss';
+@use '../../_mixins.scss';
+
+.card{
+    display: inline-block;
+    &_ImgContainer{
+        height: 300px;        
+        padding-bottom: 7px;
+        background-color: rgb(194 194 194 / 16%);
+        &__funcs{
+            display: none;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
+            &_item{
+                list-style: none;
+                padding: 7px;
+                border-radius: 4px;
+                background-color: variables.$third-type-color;
+                svg{
+                    fill: black;
+                }
+                &:hover{
+                    svg{
+                        fill: green;
+                    }
+                }
+            }
+        }
+    }
+    &_desc{
+        h4{
+            padding: 12px 0 6px 0;
+            font-family: Cera Pro;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 0%;
+            color: variables.$second-type-color;            
+        }
+        span{
+            font-family: Cera Pro;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 16px;
+            color: variables.$main-color;
+        }
+    }
+    &:hover{
+        cursor: pointer;
+        border-top: 1px solid variables.$main-color;
+    }
+}
+
+.card:hover .card_ImgContainer__funcs{
+    display: flex;
+}
