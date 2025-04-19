@@ -1,0 +1,44 @@
+@use '../../_mixins.scss';
+@use '../../variables.scss';
+
+.blog_post{
+    width: 268px;
+    background-color: rgba(251, 251, 251, 1);
+    div{
+        padding: 9px 15px 13px 15px;
+        span{
+            font-family: Cera Pro;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: variables.$main-color;
+        }
+        h3{
+            width: 189px;
+            padding-top: 4px;
+            font-family: Cera Pro;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 26px;
+            color: variables.$second-type-color;
+        }
+        p{
+            padding: 4px 0 9px 0;
+            width: 223px;
+            font-family: Cera Pro;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: left;
+            color: rgba(114, 114, 114, 1);
+        }
+        .blog_post_desc{
+            text-decoration: none;
+            font-family: Cera Pro;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: rgba(61, 61, 61, 1);
+        }
+    }
+}

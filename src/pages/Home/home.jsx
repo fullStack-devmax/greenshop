@@ -1,8 +1,13 @@
 import home_style from './home.module.scss';
 
+import { Link } from 'react-router-dom';
+
+import double_cards_img1 from '../../assets/images/headPlan.png';
+
 import { Header } from "../../components/Header"
 import { Card } from '../../components/Card';
 import { Container } from '../../components/Container';
+import { Blog } from '../../components/BlogPost';
 
 
 export const Home = () => {
@@ -67,6 +72,40 @@ export const Home = () => {
                                 <Card/>
                             </div>
                         </div>
+                    </div>
+                </Container>
+            </section>
+            <section className={home_style.double_cards}>
+                <Container>
+                    <div className={home_style.double_cards__box}>
+                        <div className={home_style.double_cards__box_item}>
+                            <img src={double_cards_img1} width={292} height={292} alt="card plant 1" />
+                            <div>
+                                <h2>SUMMER CACTUS & SUCCULENTS</h2>
+                                <p>We are online plant shop offering a wide range of cheap and trendy plants</p>
+                                <Link className={home_style.btn}>Find More</Link>
+                            </div>
+                        </div>
+                        <div className={home_style.double_cards__box_item}>
+                            <img src={double_cards_img1} width={292} height={292} alt="card plant 1" />
+                            <div>
+                                <h2>SUMMER CACTUS & SUCCULENTS</h2>
+                                <p>We are online plant shop offering a wide range of cheap and trendy plants</p>
+                                <Link className={home_style.btn}>Find More</Link>
+                            </div>
+                        </div>
+                    </div>
+                </Container>
+            </section>
+            <section className={home_style.blog}>
+                <Container>
+                    <h2>Our Blog Posts</h2>
+                    <p>We are an online plant shop offering a wide range of cheap and trendy plants. </p>
+                    <div className={home_style.blog_box}>
+                        <Blog/>
+                        <Blog/>
+                        <Blog/>
+                        <Blog/>
                     </div>
                 </Container>
             </section>

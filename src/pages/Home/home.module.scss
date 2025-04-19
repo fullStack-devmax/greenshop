@@ -4,6 +4,7 @@
 .ProductSorts{
     padding: 40px 0;
     &_categories{
+        height: fit-content;
         width: 25%;
         padding: 14px 22px;
         background-color: rgb(194 194 194 / 16%);
@@ -92,5 +93,75 @@
             gap: 76px 106px;
             grid-template-columns: auto auto auto;
         }
+    }
+}
+
+.double_cards{
+    &__box{
+        @include mixins.flexbox;
+        padding: 100px 0;
+        &_item{
+            @include mixins.flexbox;
+            padding: 37px 30px;
+            background-color: rgb(194 194 194 / 16%);
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items:flex-end;
+                justify-content: center;
+                h2{
+                    width: 179px;
+                    font-family: Cera Pro;
+                    font-weight: 900;
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: right;
+                }
+                p{
+                    width: 292px;
+                    padding: 10px 0 20px 0;
+                    font-family: Cera Pro;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    text-align: right;
+                    color: variables.$second-type-color;
+                }
+                .btn{
+                    display: inline-block !important;
+                    @include mixins.main-btn;
+                }
+            }
+        }
+    }
+}
+
+.blog{
+    padding: 38px 0 50px 0;
+    h2{
+        display: block;
+        font-family: Cera Pro;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 16px;
+        text-align: center;
+        color: variables.$second-type-color;
+    }
+    p{
+        display: block;
+        padding-top: 15px;
+        font-family: Cera Pro;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: rgba(114, 114, 114, 1);
+    }
+    &_box{
+        padding-top: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
     }
 }
