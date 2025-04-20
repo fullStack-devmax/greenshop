@@ -1,10 +1,12 @@
-import { Navbar } from "../../components/Navbar/navbar"
+import { Footer } from "../../components/Footer"
+import { Navbar } from "../../components/Navbar"
 
 export const Layout = ({children}) => {
     return(
         <>
             <Navbar/>
             {children}
+            <Footer/>
         </>
     )
 }

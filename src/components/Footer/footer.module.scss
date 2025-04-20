@@ -1,0 +1,97 @@
+@use '../../_mixins.scss';
+@use '../../_variables.scss';
+
+footer{
+    padding-top: 50px;
+    .services{
+        padding: 25px;
+        display: flex;
+        align-items:flex-start;
+        justify-content: space-around;
+        background-color: rgba(251, 251, 251, 1);
+        ul{
+            list-style: none;
+            display: flex;
+            align-items:center;
+            column-gap: 27px;
+            li{
+                div{
+                    span{
+                        position: relative;
+                        display: block;
+                        width: 74px;
+                        height: 74px;
+                        border-radius: 100%;
+                        background: rgba(70, 163, 88, 0.13);
+                        img{
+                            position: absolute;
+                            left: 15px;
+                            bottom: 3px;
+                        }
+                    }
+                }
+                h3{
+                    padding: 18px 0 9px 0;
+                    font-family: Cera Pro;
+                    font-weight: 700;
+                    font-size: 17px;
+                    line-height: 16px;
+                    color: variables.$second-type-color;                
+                }
+                p{
+                    width: 204px;
+                    font-family: Cera Pro;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: rgba(61, 61, 61, 1);
+                }
+            }
+        }
+        div{
+            h3{
+                font-family: Cera Pro;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 16px;
+                color: variables.$second-type-color;
+            }
+            input{
+                width: calc(354px - 85px);
+                padding: 12px;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+                outline: none;
+                border: none;
+                background-color: variables.$third-type-color;
+                &::placeholder{
+                    font-family: Cera Pro;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: rgba(172, 172, 172, 1);
+                }
+            }
+            button{
+                padding: 12px 26px;
+                font-family: Cera Pro;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 16px;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+                background-color: variables.$main-color;
+                color: variables.$third-type-color;
+                border:none;
+            }
+            p{
+                width: 354px;
+                font-family: Cera Pro;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 22px;
+                color: rgba(114, 114, 114, 1);
+            }
+        }
+    }
+}
