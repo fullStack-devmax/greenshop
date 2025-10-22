@@ -3,18 +3,22 @@
 
 footer{
     padding-top: 50px;
+    background-color: rgba(251, 251, 251, 1);
+    border-bottom:1px solid rgb(70, 163, 88);
     .services{
         padding: 25px;
         display: flex;
         align-items:flex-start;
-        justify-content: space-around;
-        background-color: rgba(251, 251, 251, 1);
+        justify-content: space-between;
         ul{
             list-style: none;
             display: flex;
             align-items:center;
-            column-gap: 27px;
+            column-gap: 60px;
             li{
+                display: flex;
+                flex-direction: column;
+                align-items:flex-start;
                 div{
                     span{
                         position: relative;
@@ -92,6 +96,119 @@ footer{
                 line-height: 22px;
                 color: rgba(114, 114, 114, 1);
             }
+        }
+    }
+    .contact{
+        padding: 25px;
+        border-top: 1px solid rgba(70, 163, 89, 0.508);
+        border-bottom: 1px solid rgba(70, 163, 89, 0.508);
+        background-color: rgba(70, 163, 88, 0.1);
+        .contact__box{
+            display: flex;
+            align-items: center;
+            column-gap: 200px;
+            img{
+                width: 150px;
+                height: auto;
+            }
+            &_menu{
+                list-style: none;
+                display: flex;
+                align-items: center;
+                column-gap: 150px;
+                li{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }
+                    p{
+                        padding-left: 5px;
+                        width: 176px;
+                        font-family: Cera Pro;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 22px;
+                        letter-spacing: 0%;
+                    }
+                }
+            }
+        }
+    }
+    .features{
+        padding: 33px 23px;
+        border-bottom: 1px solid #46A35833;
+        .features__box{
+            display: flex;
+            align-items: center;
+            column-gap: 200px;
+            div:not(:last-child){
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                h3{
+                    padding-bottom: 15px;
+                    font-family: Cera Pro;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 16px;
+                    letter-spacing: 0%;                    
+                }
+                a{
+                    padding-bottom: 5px;
+                    text-decoration: none;
+                    font-family: Cera Pro;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 30px;
+                    letter-spacing: 0%;
+                    color: rgba(61, 61, 61, 1);
+                }
+                a:hover{
+                    color: variables.$main-color;
+                }
+            }
+            div:last-child{
+                h3{
+                    padding-bottom: 15px;
+                    font-family: Cera Pro;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 16px;
+                    letter-spacing: 0%;  
+                }
+                .social_media{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    column-gap: 10px;
+                    padding: 20px 0 33px;
+                    a{
+                        text-decoration: none;
+                        opacity: 1;
+                        padding: 15px;
+                        transition: 0.3s transform;
+                        border-radius: 4px;
+                        border: 1px solid variables.$main-color;
+                    }
+                    a:hover{
+                        transform: scale(1.2);
+                    }
+            }
+            }
+    }}
+    .site{
+        background-color: variables.$third-type-color;
+        padding: 7px 7px;
+        p{
+            text-align: center;
+            font-family: Cera Pro;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 30px;
+            letter-spacing: 0%;
+            color: variables.$second-type-color;
         }
     }
 }
